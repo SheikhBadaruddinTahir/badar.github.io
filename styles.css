@@ -1,0 +1,188 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.7;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #008080;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #FFE4E1; /* Vibrant red */
+    opacity: 0; /* Start invisible */
+    transform: scale(0.8); /* Start smaller */
+    animation: fadeInScale 1s forwards; /* Animation name and duration */
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0; /* Invisible */
+        transform: scale(0.8); /* Smaller size */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: scale(1); /* Original size */
+    }
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Styles */
+.navbar {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-button {
+    color: #FFE4E1;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-button:hover {
+    color: #F5F5F5; /* Slightly lighter on hover */
+}
+
+/* Section Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.research-area {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.research-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Publication Styles */
+.publication {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.publication .title a {
+    font-weight: bold;
+    color: #008080;
+}
+
+.publication .link {
+    color: #008080;
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f7f7f7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #006666; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #008080;
+    color: #fff;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
